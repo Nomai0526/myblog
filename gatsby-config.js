@@ -1,8 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Nomai0526's blog`,
+    description: `meow description`,
+    author: `@Nomai0526`,
+    // image:'static/profile_icon.png'
+    social:{
+      douban: "#",
+      email: "#",
+      facebook: "#",
+      github: "#",
+      instagram: "#",
+      linkedin: "#",
+      rss: "/rss.xml",
+      telegram: "#",
+      twitter: "#",
+      youtube: "#",
+    },
+    footerHTML: `© 2021 <a href="https://github.com/Nomai0526">Nomai0526</a> All rights reserved.`,
+    dateFormat: `YYYY-MM-DD`,
+    language: `zh`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,7 +41,7 @@ module.exports = {
         // background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `static/profile_icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
