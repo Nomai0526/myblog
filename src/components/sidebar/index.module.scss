@@ -1,8 +1,10 @@
+@import "../../scss/variable.scss";
+
 .sideBar {
   background-color: red;
   display: inline-block;
   // font-size: 20px;
-  width: 20%;
+  width: $side-container-width;
   height: 100vh;
 }
 .body {
