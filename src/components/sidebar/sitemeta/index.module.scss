@@ -1,15 +1,25 @@
+@import "../../../scss/variable.scss";
+
 .sitemeta{
 
     display: inline-block;
     height: 150px;
     width: 100%;
     background-color: green;
+    // display: fl;
     &__head{
-
+        height: 75px;
+        text-align: right;
+        line-height: 75px;
+        font-family: $font-family;
+        font-size: $font-title-size;
     }
-
+    
     &__description{
-
+        height: 75px;
+        text-align: right;
+        font-family: $font-family;
+        font-size: $font-content-size;
     }
 
 }

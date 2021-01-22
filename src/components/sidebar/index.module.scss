@@ -2,10 +2,16 @@
 
 .sideBar {
   background-color: red;
-  display: inline-block;
+  
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+
   // font-size: 20px;
+  // text-align: right;
   width: $side-container-width;
   height: 100vh;
+  vertical-align: top;
 }
 .body {
   background-color: blue;

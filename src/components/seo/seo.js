@@ -18,7 +18,6 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
-            image
             social {
               twitter
             }
@@ -38,7 +37,7 @@ function SEO({ description, lang, meta, title }) {
         lang: lang || site.siteMetadata.language,
       }}
       title={title || site.siteMetadata.title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={
         [
           {

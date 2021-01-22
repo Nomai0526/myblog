@@ -1,11 +1,34 @@
 import React from 'react'
 import styles from './index.module.scss'
+import { useStaticQuery, graphql } from 'gatsby'
 
-const sitemeta = ()=>
-    <div className={styles["sitemeta"]}>
-        <div className={styles["sitmeta__head"]}></div>
-        123
-        <div className={styles["sitmeta__descriptions"]}></div>
-    </div>
+const Sitemeta = () => {
+    const {site} = useStaticQuery(
+        graphql`
+            query {
+                site {
+                    siteMetadata {
+                      title
+                      description
+                    }
+                }
+            }
+        `
+    )
 
-export default sitemeta
+    console.log(site);
+    
+
+    return (
+        <div className={styles["sitemeta"]}>
+            <div className={styles["sitemeta__head"]}>
+                {site.siteMetadata.title}
+            </div>
+            <div className={styles["sitemeta__description"]}>
+                {site.siteMetadata.description}
+            </div>
+        </div>
+    )
+}
+
+export default Sitemeta
