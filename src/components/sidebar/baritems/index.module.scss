@@ -1,7 +1,9 @@
+@import '../../../scss/variable.scss';
+
 .item{
-    height: 40px;
-    border: solid 1px;
-    background-color: pink;
+    font-size: 20px;
+    height: 60px;
     text-align: right;
-    line-height: 40px;
+    line-height: 60px;
+    font-family: $default-font-list;
 }  

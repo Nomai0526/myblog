@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Nomai0526's blog`,
+    title: `诺麦的博客`,
     description: `meow description`,
     author: `@Nomai0526`,
     // image:'static/profile_icon.png'

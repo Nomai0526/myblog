@@ -5,12 +5,5 @@
     display: inline-block;
     width: $main-container-width;
     height: 100vh;
-}
-body{
-    height: 100%;
-    margin: 0px;
-    // vertical-align: top;
-}
-html{
-    height: 100%;
+    vertical-align: top;
 }

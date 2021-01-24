@@ -13,11 +13,8 @@ const IndexPage = () => {
   
   return (
     <div className={styles.totaldiv}>
-      {/* <SEO title="Home" /> */}
-      <SideBar ></SideBar >
+      <SideBar></SideBar>
       <Main></Main>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      </div>
     </div >
   )
 }

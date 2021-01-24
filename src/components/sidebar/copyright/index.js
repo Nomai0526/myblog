@@ -3,7 +3,7 @@ import styles from './index.module.scss'
 
 const Copyright = ({ content }) => {
     return (
-        <div className={styles.body}
+        <div className={styles.copyright}
             dangerouslySetInnerHTML={{ __html: content }} />
     )
 }

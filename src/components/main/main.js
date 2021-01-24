@@ -4,7 +4,7 @@ import styles from './main.module.scss'
 
 const main = ({children}) => {
     return (<div style={{textAlign:"center"}} id={styles["main"]} >
-        {children}
+        {/* {children} */}
     </div>)
 }
 

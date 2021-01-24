@@ -1,8 +1,27 @@
+$color-accent: #eaedf7;
+$back-container-background: #fcfcfc;
+$front-container-background: #ffffff;
+
 $side-container-width: 20%;
 $main-container-width: 80%;
+
+$default-font-list: "Noto Serif SC", serif;
+$ui-font-list: "Quicksand", "Noto Serif SC", sans-serif;
+
+$h1-size: 30px;
+$h-diff: 3px;
+
+$dark-accent: darken($color-accent, 10%);
+$deep-dark-accent: darken($color-accent, 50%);
+$color-text: $deep-dark-accent;
+
 
 $max-two-column-width: 1600px;
 
 $font-title-size:20px;
 $font-content-size:16px;
 $font-family: Arial, Helvetica, sans-serif;
+
+$social-icon-size: 16px;
+$social-icon-outline-size: 2.25em;
+$deep-dark-accent: darken($color-accent, 50%);

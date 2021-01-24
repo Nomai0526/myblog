@@ -1,7 +1,7 @@
 @import "../../scss/variable.scss";
 
 .sideBar {
-  background-color: red;
+  // background-color: red;
   
   // display: flex;
   display: inline-block;
@@ -10,9 +10,14 @@
 
   // font-size: 20px;
   // text-align: right;
+  background-color: $front-container-background;
   width: $side-container-width;
   height: 100vh;
   vertical-align: top;
+
+  font-family: $ui-font-list;
+
+  min-width: 256px;
 }
 .body {
   background-color: blue;
