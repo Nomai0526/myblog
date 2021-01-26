@@ -4,7 +4,7 @@ module.exports = {
     description: `meow description`,
     author: `@Nomai0526`,
     // image:'static/profile_icon.png'
-    social:{
+    social: {
       douban: "#",
       email: "#",
       facebook: "#",
@@ -26,8 +26,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/content`,
+        name: `content`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // Plugins configs
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,

@@ -15,9 +15,12 @@
   height: 100vh;
   vertical-align: top;
 
+  border-right: solid 1px;
+  background-color: #fcfcfc;
+
   font-family: $ui-font-list;
 
-  min-width: 256px;
+  // min-width: 256px;
 }
 .body {
   background-color: blue;

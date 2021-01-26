@@ -6,6 +6,7 @@ import React from "react"
 // import SEO from "../components/seo/seo"
 import SideBar from "../components/sidebar/index"
 import Main from "../components/main/main"
+// import ArticleItem from '../components/main/articleitem/index'
 import styles from "./index.module.scss"
 
 const IndexPage = () => {

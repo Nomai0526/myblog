@@ -1,9 +1,11 @@
 @import "../../scss/variable.scss";
 
 #main {
-    background-color: blue;
     display: inline-block;
-    width: $main-container-width;
     height: 100vh;
+    width: $main-container-width;
     vertical-align: top;
+    overflow-y: scroll;
+    // box-shadow: -10px 0px 1px #fcfcfc;
+    padding-top: 40px;
 }
