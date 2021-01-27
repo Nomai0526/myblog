@@ -3,10 +3,12 @@
 
 .articleItem{
     height: 250px;
+    margin: 0 40px;
     display: flex;
     align-items: center;
     text-align: left;
     justify-content: space-around;
+    border-bottom: solid 1px;
 }
 .itemContent{
     display: flex;
@@ -16,11 +18,21 @@
     margin: 0 20px;
     height: 220px;
     min-width: 40px;
+    &:hover{
+        .itemTitle{
+            text-decoration: underline;
+            color: red;
+        }
+    }
+    *{
+        transition: all 10.2s linear;
+    }
 }
 .itemTitle{
     height: 30px;
     min-width: 40px;
     font-size: $font-title-size;
+    
 }
 .itemExcerpt{
     height: 100px;
@@ -28,7 +40,7 @@
     width: 100%;
     font-size: $font-content-size;
     text-decoration: none;
-    & > a {
+    & >a:link{
         text-decoration: none;
     }
 }
@@ -40,4 +52,7 @@
     width: 300px;
     flex:0 0 300px;
     background-size: 100% 100%;
+}
+.articleLink{
+    text-decoration: none;
 }

@@ -4,9 +4,9 @@ import { Link } from 'gatsby';
 
 const ArticleItem = ({ title, description, image }) => {
     console.log(title);
-    
+
     return (
-        <Link to="#">
+        <Link to="#" className={styles.articleLink}>
             <div className={styles.articleItem}>
                 <div className={styles.itemContent}>
                     <div className={styles.itemTitle}>
@@ -16,10 +16,10 @@ const ArticleItem = ({ title, description, image }) => {
                         {description}
                     </div>
                 </div>
-                <div className={styles.itemImage} style={
+                {image && <div className={styles.itemImage} style={
                     { backgroundImage: `url(${image})` }
                 }>
-                </div>
+                </div>}
             </div>
         </Link>
     )
