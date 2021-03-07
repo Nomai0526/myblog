@@ -26,12 +26,12 @@ const Main = ({ children }) => {
     return (<div style={{ textAlign: "center" }} id={styles["main"]} >
         {children}
         {edges && edges.map(({ node }) => {
-            console.log(node.frontmatter);
-
             return <div key={node.frontmatter.title} className={styles.itemClass}>
                 <ArticleItem title={node.frontmatter.title}
                     description={node.frontmatter.description}
-                    image={node.frontmatter.image} >
+                    image={node.frontmatter.image} 
+                    slug={node.frontmatter.slug}
+                    >
                 </ArticleItem>
             </div>
         })}

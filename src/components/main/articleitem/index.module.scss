@@ -21,11 +21,14 @@
     &:hover{
         .itemTitle{
             text-decoration: underline;
-            color: red;
+            color: $color-accent;
+        }
+        .itemExcerpt{
+            color: $color-accent;
         }
     }
     *{
-        transition: all 10.2s linear;
+        transition: all 0.4s linear;
     }
 }
 .itemTitle{

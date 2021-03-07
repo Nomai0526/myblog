@@ -2,11 +2,11 @@ import React from 'react';
 import styles from './index.module.scss'
 import { Link } from 'gatsby';
 
-const ArticleItem = ({ title, description, image }) => {
+const ArticleItem = ({ title, description, image , slug }) => {
     console.log(title);
 
     return (
-        <Link to="#" className={styles.articleLink}>
+        <Link to={slug} className={styles.articleLink}>
             <div className={styles.articleItem}>
                 <div className={styles.itemContent}>
                     <div className={styles.itemTitle}>

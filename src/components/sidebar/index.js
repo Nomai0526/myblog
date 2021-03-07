@@ -36,7 +36,7 @@ const Sidebar = () => {
     return (
         <div className={styles["sideBar"]} id="sideBar" >
             <div style={{
-                width: "80%",
+                width: "100%",
                 height: '100%',
                 // backgroundColor: 'green',
                 float: 'right',
