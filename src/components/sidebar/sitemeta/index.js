@@ -16,7 +16,6 @@ const Sitemeta = () => {
         `
     )
 
-    console.log(site);
     
 
     return (

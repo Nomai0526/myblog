@@ -10,8 +10,6 @@ import Main from "../components/main/main"
 import styles from "./index.module.scss"
 
 const IndexPage = () => {
-  console.log(styles);
-  
   return (
     <div className={styles.totaldiv}>
       <SideBar></SideBar>

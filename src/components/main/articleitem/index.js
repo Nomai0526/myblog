@@ -3,7 +3,6 @@ import styles from './index.module.scss'
 import { Link } from 'gatsby';
 
 const ArticleItem = ({ title, description, image , slug }) => {
-    console.log(title);
 
     return (
         <Link to={slug} className={styles.articleLink}>
