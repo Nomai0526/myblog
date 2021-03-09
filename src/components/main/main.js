@@ -9,6 +9,9 @@ const Main = ({ children }) => {
         allMarkdownRemark {
             edges {
              node {
+                fields {
+                    slug
+                }
                frontmatter {
                 image
                 description
@@ -29,9 +32,9 @@ const Main = ({ children }) => {
             return <div key={node.frontmatter.title} className={styles.itemClass}>
                 <ArticleItem title={node.frontmatter.title}
                     description={node.frontmatter.description}
-                    image={node.frontmatter.image} 
-                    slug={node.frontmatter.slug}
-                    >
+                    image={node.frontmatter.image}
+                    slug={node.fields.slug}
+                >
                 </ArticleItem>
             </div>
         })}
